@@ -42,7 +42,7 @@ class NewPages extends Component<newPagesProps> {
 
   // 删除待办
   removeTodo = e => {
-    const { dispatch, newpagestest: { todoList } } = this.props;
+    const { dispatch, todolist: { todoList } } = this.props;
     // 要删除的索引
     const index = e.currentTarget && e.currentTarget.dataset.id;
     const results = todoList.filter(item => (
