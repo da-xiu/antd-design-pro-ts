@@ -21,7 +21,7 @@ class NewPages extends Component<newPagesProps> {
   }
   // 新增待办
   addTodoList = () => {
-    const { dispatch, newpagestest: { todoList, index } } = this.props;
+    const { dispatch, todolist: { todoList, index } } = this.props;
    const val = this.myRef.current.value; // 节点值
    const toDoList = [...todoList, { val, index }]; // 增加的值
    let key: any = index; // 增加的项序号
